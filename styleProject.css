@@ -102,7 +102,6 @@ a {
 }
 
 section#projectPortion {
-    border: 1px red solid;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,7 +110,6 @@ section#projectPortion {
 }
 
 section .projectText {
-    border: 1px red solid;
     width: fit-content;
     padding-left: 5px;
 }
@@ -128,7 +126,6 @@ img {
 }
 
 section .tile {
-    border: 1px red solid;
     background: #ffffff;
     border-radius: 20px;
     margin: 15px;
