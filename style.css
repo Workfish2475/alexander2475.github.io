@@ -53,19 +53,19 @@ body {
             #FFFFFF 50% /* Adjust the color stop to cover the entire background */
     );
     background-size: 200% 100%;
-    background-position: -100%; /* Start position at -100% */
+    background-position: -100%;
     display: inline-block;
     padding: 5px 0;
     position: relative;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: background-position 0.5s ease-in-out; /* Transition only background-position */
+    transition: background-position 0.5s ease-in-out;
     margin-left: 20px;
     font-weight: bold;
 }
 
 a:hover {
-    background-position: 0; /* Move background position to reveal full color */
+    background-position: 0;
 }
 
 .Content {
