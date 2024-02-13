@@ -12,6 +12,7 @@ html {
 @media only screen and (max-width: 767px) {
     body {
         height: auto;
+        width: auto;
     }
     .Title {
         min-height: 30vh;
@@ -34,7 +35,6 @@ body {
 }
 
 .Title {
-    margin: 10px;
     background: linear-gradient(to bottom, #007AFF, darkblue);
     text-align: center;
     min-height: 50vh;

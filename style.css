@@ -17,7 +17,6 @@ body {
 }
 
 .Heading {
-    margin: 10px;
     background: linear-gradient(to bottom, #007AFF, darkblue);
     text-align: center;
     min-height: 50vh; /* Use viewport height to make the div take at least 50% of the viewport height */
@@ -70,11 +69,13 @@ a:hover {
 
 .Content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 20px;
-    border: 5px;
+    justify-items: center;
+    align-items: center;
     border-radius: 10px;
     position: relative;
+    padding-top: 20px;
     padding-bottom: 60px;
 }
 
