@@ -115,9 +115,6 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
-.col {
-    flex: 1;
-}
 
 .flex-grid img {
     width: 75%;
