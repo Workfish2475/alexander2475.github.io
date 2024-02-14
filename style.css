@@ -109,4 +109,19 @@ footer {
     font-family: 'Rubik', sans-serif;
 }
 
+.flex-grid {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col {
+    flex: 1;
+}
+
+.flex-grid img {
+    width: 75%;
+    height: 50%;
+    padding-top: 10%;
+}
 
