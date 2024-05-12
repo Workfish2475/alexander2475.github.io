@@ -13,9 +13,11 @@ html {
 .header {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    width: fit-content;
+    justify-content: center;
     color: white;
+    height: 50vh;
+    padding-left: 25%;
+    padding-right: 25%;
 }
 
 .header h1 {
@@ -25,4 +27,31 @@ html {
 
 .header p {
     margin-top: 0;
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+    flex-flow: row-reverse;
+    gap: 10px;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+/* Working here */
+.links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    background-image: linear-gradient(to right,#8ec07c 0%,#8ec07c 20%,#458588 20%,#458588 40%, #fabd2f 40%, #fabd2f 60%,#fb4934 60%,#fb4934 80%,#282828 80%,#282828 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0px;
+    background-position: 0 110%;
+    transition: background-size 0.3s ease-out;
+}
+
+.links a:hover {
+    display: inline;
+    background-size: 100% 3px;
 }
