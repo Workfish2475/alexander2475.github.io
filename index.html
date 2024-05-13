@@ -3,23 +3,39 @@
 <head>
   <title>Landing page</title>
   <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1"/>
 </head>
 
-<body>
+<!-- Need to find way to keep track of if user already loaded content in session (keep animation from repeating) -->
 
+<body>
+<!-- Need to implement a theme button to allow switching of dark and lightmode -->  
 <section class="links">
   <a href="https://github.com/alexander2475">Github</a>
   <a href="contact.html">Contact</a>
 </section>
 
 <section class="header">
-  <h1>
+  <h1 id="headerTitle">
     Hey, I'm Alex.
   </h1>
+  <p id="headerBody">
+    I'm a CS university student. I primarily work in Java, but I'm
+    always willing to adapt. Seeking internship opportunities to gain practical experience.
+  </p>
+  <strong id="tag">
+    Student Fall 2024
+  </strong>
+</section>
+
+<section class="content">
+  <h1>
+    About me
+  </h1>
   <p>
-    I'm Alex, a computer science senior at university. Primarily a Java developer, but 
-    open to exploring new technologies. Seeking internship opportunities to gain practical experience.
+    I'm a first generation college student at NMSU where I'm pursuing a B.A. in computer science. Some
+    of my other non-technology related interest include: tea, drawing, music, and cooking. 
   </p>
 </section>
 
