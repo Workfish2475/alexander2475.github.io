@@ -1,5 +1,3 @@
-let scollable = true;
-
 function typewriterEffect(elementId, speed, callback) {
   let target = document.getElementById(elementId);
   if (!target) {
@@ -40,6 +38,7 @@ function fadeUpEffect(elementId, speed, callback) {
   }, 10);
 }
 
+// This animation looks trashy.
 function animateContent(elementClass, speed, callback) {
   let targets = document.getElementsByClassName(elementClass);
 
@@ -85,5 +84,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Working, but needs some tweaking (Maybe add after header has loaded?)
 document.addEventListener("scroll", function () {
-  animateContent("content", 1000);
+  animateContent("short-bio", 1000, function () {
+    animateContent("projects", 1000, function () {
+      animateContent("contact", 1000);
+    });
+  });
 });

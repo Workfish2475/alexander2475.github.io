@@ -24,10 +24,35 @@ html.dark, body.dark {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 40vh;
+    height: 35vh;
     padding-left: 25%;
     padding-right: 25%;
 }
+
+@media only screen and (max-width: 340px){
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 35vh;
+        max-width: 1200px; /* Max width of the header content */
+        margin: 0 auto;    /* Center the header content */
+        padding: 0 1rem;   /* Small padding for mobile screens */
+    }
+
+    .short-bio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 35vh;
+        max-width: 1200px; /* Max width of the header content */
+        margin: 0 auto;    /* Center the header content */
+        padding: 0 1rem;   /* Small padding for mobile screens */
+    }
+    
+}
+
 
 .header h1 {
     font-size: xx-large;
@@ -82,9 +107,26 @@ html.dark, body.dark {
     padding: 5px;
 }
 
-.content {
+.short-bio {
+    text-align: right;
     display: none;
     margin-top: 20vh;
     padding-left: 25%;
     padding-right: 25%;
 }
+
+.projects {
+    display: none;
+    margin-top: 20vh;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.contact {
+    text-align: right;
+    display: none;
+    margin-top: 20vh;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
