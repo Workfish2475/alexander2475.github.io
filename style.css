@@ -1,14 +1,14 @@
 /* Font import goes here */
 
 html {
-    margin: 5px;
-    height: 100vh;
+    height: 100%;
     background-color: #111111;
     font-family: Arial, Helvetica, sans-serif;
     display: flex; 
     justify-content: center;
     color: white;
     min-width: 340px;
+    border: 1px red solid;
 }
 
 html, body {
@@ -25,8 +25,8 @@ html.dark, body.dark {
     flex-direction: column;
     justify-content: center;
     height: 35vh;
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 @media only screen and (max-width: 340px){
@@ -36,9 +36,17 @@ html.dark, body.dark {
         justify-content: center;
         align-items: center;
         height: 35vh;
-        max-width: 1200px; /* Max width of the header content */
-        margin: 0 auto;    /* Center the header content */
-        padding: 0 1rem;   /* Small padding for mobile screens */
+        max-width: 1200px;
+        margin: 0 auto;    
+        padding: 0 1rem;
+        border: red solid 1px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 90vw !important;
+        border: red solid 1px;
     }
 
     .short-bio {
@@ -46,13 +54,34 @@ html.dark, body.dark {
         flex-direction: column;
         justify-content: center;
         height: 35vh;
-        max-width: 1200px; /* Max width of the header content */
-        margin: 0 auto;    /* Center the header content */
-        padding: 0 1rem;   /* Small padding for mobile screens */
+        max-width: 1200px;
+        margin: 0 auto;   
+        padding: 0 1rem;
+        border: 1px red solid;
     }
-    
-}
 
+    .projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 35vh;
+        max-width: 1200px;
+        margin: 0 auto;   
+        padding: 0 1rem;
+        border: 1px red solid;
+    }
+
+    .contact .button-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0 5%;
+    }
+
+    .contact .button-label{
+        display: none !important;
+    }  
+}
 
 .header h1 {
     font-size: xx-large;
@@ -110,23 +139,62 @@ html.dark, body.dark {
 .short-bio {
     text-align: right;
     display: none;
-    margin-top: 20vh;
-    padding-left: 25%;
-    padding-right: 25%;
+    
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .projects {
     display: none;
-    margin-top: 20vh;
-    padding-left: 25%;
-    padding-right: 25%;
+    
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .contact {
-    text-align: right;
     display: none;
-    margin-top: 20vh;
-    padding-left: 25%;
-    padding-right: 25%;
+    text-align: right;    
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 5vh;
+    
+    border: 1px red solid;
 }
 
+.contact .button-group {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    gap: 15%;
+    font-size: larger;
+}
+
+.contact button {
+    margin-top: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border: white solid 2px;
+    background-color: #111111;
+    border-radius: 50px;
+    padding: 10px;
+    color: white;
+    max-width: 50px;
+    display: block; /* Ensure button is block-level to stack properly */
+}
+
+.contact .button-label {
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-shadow: rgb(0, 0, 0, 0.5) 0.5px 0 10px;
+    font-weight: bold;
+}
+
+.contact button:hover {
+    color: #111111;
+    background-color: rgba(255, 255, 255, 1);
+    
+    border-radius: 50px;
+    border: white solid 2px;
+    padding: 10px;
+}
