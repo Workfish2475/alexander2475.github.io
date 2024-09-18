@@ -86,7 +86,9 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("scroll", function () {
   animateContent("short-bio", 1000, function () {
     animateContent("projects", 1000, function () {
-      animateContent("contact", 1000);
+      animateContent("project-item", 1000, function () {
+        animateContent("contact", 1000);
+      });
     });
   });
 });

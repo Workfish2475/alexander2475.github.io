@@ -11,15 +11,18 @@
 <!-- Need to find way to keep track of if user already loaded content in session (keep animation from repeating) -->
 
 <body>
-<!-- Need to implement a theme button to allow switching of dark and lightmode -->  
+<!-- Need to implement a theme button to allow switching of dark and light-mode -->
 <section class="links">
   <button onclick="themeToggle()"><i class="fa-solid fa-circle-half-stroke"></i></button>
   <a href="https://github.com/alexander2475"><i class="fa-brands fa-github"></i></a>
 </section>
 
 <section class="header">
+  <p id="headerTemp">
+    Hi, i'm
+  </p>
   <h1 id="headerTitle">
-    Hey, I'm Alex.
+    Alex Rivera
   </h1>
   <p id="headerBody">
     I'm a CS university student. I primarily work in Java, but I'm
@@ -32,17 +35,73 @@
 
 <section class="short-bio">
   <h1>
-    Bio
+    About Me
   </h1>
-  <p>
-    Something about me could go here. 
-  </p>
+
+  <section class="bio-content">
+    <section id="educationBody">
+      <p>
+        <strong>
+          Education
+        </strong>
+        <i class="fa-solid fa-graduation-cap"></i>
+      </p>
+      <p>
+        Computer Science (B.A)
+      </p>
+      <p id="school-info">
+        New Mexico State University - 2024
+      </p>
+    </section>
+    <section id="bio">
+      <p>
+        I'm currently a student in his last year of university. I'm very interested in app development and have done
+        some personal project with Swift, Kotlin (w/ compose), and plan on exploring both react Native and C#. Currently,
+        I'm most proficient in Java, but am always trying to learn different tools.
+      </p>
+    </section>
+  </section>
 </section>
 
 <section class="projects">
   <h1>
-    Projects
+    Projects <i class="fa-solid fa-code"></i>
   </h1>
+
+  <section class="project-group">
+    <section class="project-item">
+      <img src="assets/fini.png">
+      <h1>
+        Fini <a href="https://github.com/alexander2475"><i class="fa-brands fa-github"></i></a>
+      </h1>
+      <p>
+        A simple to do app written in swift. It makes use of swift data, and includes lots of features out of the box
+        thanks to native api frameworks.
+      </p>
+    </section>
+
+    <section class="project-item">
+      <img src="assets/fini.png">
+      <h1>
+        OnePiece Sim <a href="https://github.com/alexander2475"><i class="fa-brands fa-github"></i></a>
+      </h1>
+      <p>
+        A simple to do app written in swift. It makes use of swift data, and includes lots of features out of the box
+        thanks to native api frameworks.
+      </p>
+    </section>
+
+    <section class="project-item">
+      <img src="assets/fini.png">
+      <h1>
+        Minecraft Mod <a href="https://github.com/alexander2475"><i class="fa-brands fa-github"></i></a>
+      </h1>
+      <p>
+        A simple to do app written in swift. It makes use of swift data, and includes lots of features out of the box
+        thanks to native api frameworks.
+      </p>
+    </section>
+  </section>
 </section>
 
 <section class="contact">
@@ -50,12 +109,15 @@
     Contact
   </h1>
   <div class="button-group">
-    <button onclick=""><i class="fa-solid fa-envelope"></i></button>
-    <button onclick=""><i class="fa-solid fa-phone"></i></button>
-    <button><i class="fa-brands fa-linkedin-in"></i></button>
+    <p>
+      <a onclick=""><i class="fa-solid fa-envelope"></i></a> alex2475@icloud.com <a onclick=""><i class="fa-brands fa-linkedin-in"></i></a> Linkedin
+    </p>
   </div>
 </section>
 
+<footer>
+
+</footer>
 
 </body>
 </html>
